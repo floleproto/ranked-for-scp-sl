@@ -1,0 +1,18 @@
+{
+    "ranks": [
+        {
+            "name": "Test 1",
+            "color": "red",
+            "cover": true,
+            "point_min": 1,
+            "point_max": 50
+        },
+        {
+            "name": "Test 2",
+            "color": "green",
+            "cover": true,
+            "point_min": 51,
+            "point_max": 100
+        }
+    ]
+}
