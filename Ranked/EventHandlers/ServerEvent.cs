@@ -34,11 +34,11 @@ namespace EventHandlers
                                     db.AddPoint(p.SteamId, main.GetConfigInt("rank_point_win_ci_classd"));
                                     break;
 
-                                case Smod2.API.Team.Role.CHAOS_INSURGENCY:
+                                case Smod2.API.Team.CHAOS_INSURGENCY:
                                     db.AddPoint(p.SteamId, main.GetConfigInt("rank_point_win_ci_ci"));
                                     break;
 
-                                case Smod2.API.Team.Role.SPECTATOR:
+                                case Smod2.API.Team.SPECTATOR:
                                     db.AddPoint(p.SteamId, main.GetConfigInt("rank_point_win_ci_spectator"));
                                     break;
                             }

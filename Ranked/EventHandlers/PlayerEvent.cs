@@ -29,7 +29,7 @@ namespace EventHandlers
 
         public void OnPlayerJoin(PlayerJoinEvent ev)
         {
-            if (cm.GetBoolValue("rank_enabled", true))
+            if (cm.GetBoolValue("rank_enabled", true) || cm.GetBoolValue("rank_badge_enabled", true))
             {
                 DBConnection db = new DBConnection(main);
                 db.AddPlayer(ev.Player.SteamId);
@@ -560,25 +560,28 @@ namespace EventHandlers
         {
             if (cm.GetBoolValue("rank_enabled", true))
             {
-                DBConnection db = new DBConnection(main);
-
-                switch (ev.Player.TeamRole.Team)
+                if (ev.Allow)
                 {
-                    case Smod2.API.Team.CLASSD:
-                        db.AddPoint(ev.Player.SteamId, main.GetConfigInt("rank_point_generator_eject_classd"));
-                        break;
+                    DBConnection db = new DBConnection(main);
 
-                    case Smod2.API.Team.CHAOS_INSURGENCY:
-                        db.AddPoint(ev.Player.SteamId, main.GetConfigInt("rank_point_generator_eject_ci"));
-                        break;
+                    switch (ev.Player.TeamRole.Team)
+                    {
+                        case Smod2.API.Team.CLASSD:
+                            db.AddPoint(ev.Player.SteamId, main.GetConfigInt("rank_point_generator_eject_classd"));
+                            break;
 
-                    case Smod2.API.Team.NINETAILFOX:
-                        db.AddPoint(ev.Player.SteamId, main.GetConfigInt("rank_point_generator_eject_ntf"));
-                        break;
+                        case Smod2.API.Team.CHAOS_INSURGENCY:
+                            db.AddPoint(ev.Player.SteamId, main.GetConfigInt("rank_point_generator_eject_ci"));
+                            break;
 
-                    case Smod2.API.Team.SCIENTIST:
-                        db.AddPoint(ev.Player.SteamId, main.GetConfigInt("rank_point_generator_eject_scient"));
-                        break;
+                        case Smod2.API.Team.NINETAILFOX:
+                            db.AddPoint(ev.Player.SteamId, main.GetConfigInt("rank_point_generator_eject_ntf"));
+                            break;
+
+                        case Smod2.API.Team.SCIENTIST:
+                            db.AddPoint(ev.Player.SteamId, main.GetConfigInt("rank_point_generator_eject_scient"));
+                            break;
+                    }
                 }
             }
         }

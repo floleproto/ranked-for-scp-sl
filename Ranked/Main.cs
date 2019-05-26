@@ -49,6 +49,10 @@ namespace Ranked
             AddConfig(new Smod2.Config.ConfigSetting("rank_sql_database", "scpsl", true, "Enter the name of the database"));
             AddConfig(new Smod2.Config.ConfigSetting("rank_sql_table", "rp", true, "Enter the name of the table where the data will be stored"));
 
+            // Badge
+
+            AddConfig(new Smod2.Config.ConfigSetting("rank_badge_enabled", false, true, "Set a badge even if the rank_enabled is off."));
+
             // Kills
 
             AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_classd", 0, true, ""));

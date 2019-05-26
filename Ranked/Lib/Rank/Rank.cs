@@ -78,7 +78,7 @@ namespace Ranked.Lib.Rank
                 {
                     if (point <= rc.PointMax && point >= rc.PointMin)
                     {
-                        if (p.GetRankName() != null)
+                        if (p.GetUserGroup().Name == null || p.GetUserGroup() == null || string.IsNullOrWhiteSpace(p.GetUserGroup().BadgeText))
                         {
                             p.SetRank(rc.Color, rc.Name, null);
                             break;
@@ -88,6 +88,10 @@ namespace Ranked.Lib.Rank
                             if (rc.Cover == true)
                             {
                                 p.SetRank(rc.Name, rc.Color, p.GetRankName());
+                                break;
+                            }
+                            else
+                            {
                                 break;
                             }
                         }
