@@ -55,36 +55,42 @@ namespace Ranked
 
             // Kills
 
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_classd", 0, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_ci", -2, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_ntf", 3, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_scient", 1, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_scp", 4, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_classd", 0, true, "")); // good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_ci", -2, true, "")); // good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_ntf", 3, true, "")); // good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_scient", 1, true, "")); // good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_kill_scp", 4, true, "")); //good
 
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ci_kill_classd", -2, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ci_kill_ci", -2, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ci_kill_ntf", 2, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ci_kill_scient", 1, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ci_kill_scp", 3, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ci_kill_classd", -2, true, ""));  //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ci_kill_ci", -2, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ci_kill_ntf", 2, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ci_kill_scient", 1, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ci_kill_scp", 3, true, "")); //good
 
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ntf_kill_classd", 1, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ntf_kill_ci", 2, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ntf_kill_ntf", -2, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ntf_kill_scient", -1, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ntf_kill_scp", 3, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ntf_kill_classd", 1, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ntf_kill_ci", 2, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ntf_kill_ntf", -2, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ntf_kill_scient", -1, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_ntf_kill_scp", 3, true, "")); //good
 
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_kill_classd", 1, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_kill_ci", 3, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_kill_ntf", -2, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_kill_scient", -1, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_kill_scp", 3, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_kill_classd", 1, true, "")); //good 
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_kill_ci", 3, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_kill_ntf", -2, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_kill_scient", -1, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_kill_scp", 3, true, "")); //good
+
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_kill_classd", 1, true, "")); //good 
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_kill_ci", 1, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_kill_ntf", 1, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_kill_scient", 1, true, "")); //good
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_kill_scp", 1, true, "")); //good
 
             // Deaths
 
             AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_death_classd", 0, true, ""));
             AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_death_ci", 0, true, ""));
             AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_death_ntf", -1, true, ""));
-            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_death_scient", 1, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_death_scient", -1, true, ""));
             AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_death_scp", 0, true, ""));
 
             AddConfig(new Smod2.Config.ConfigSetting("rank_point_classd_death_tesla", -2, true, ""));
@@ -131,6 +137,16 @@ namespace Ranked
             AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_death_wall", -2, true, ""));
             AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_death_decont", -2, true, ""));
             AddConfig(new Smod2.Config.ConfigSetting("rank_point_scient_death_nuke", -2, true, ""));
+
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_death_classd", -3, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_death_ci", -1, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_death_ntf", -1, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_death_scient", -3, true, ""));
+
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_death_tesla", -4, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_death_wall", -2, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_death_decont", -2, true, ""));
+            AddConfig(new Smod2.Config.ConfigSetting("rank_point_scp_death_nuke", -2, true, ""));
 
             // Generator
 

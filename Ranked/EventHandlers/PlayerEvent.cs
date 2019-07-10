@@ -560,7 +560,7 @@ namespace EventHandlers
         {
             if (cm.GetBoolValue("rank_enabled", true))
             {
-                if (ev.Allow)
+                if (ev.Allow && ev.Generator.HasTablet)
                 {
                     DBConnection db = new DBConnection(main);
 
